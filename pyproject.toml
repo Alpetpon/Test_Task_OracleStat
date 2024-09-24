@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "test_task_urls"
+version = "1.0.0"
+description = "CLI приложение для проверки доступных HTTP методов по заданным ссылкам."
+authors = ["Alex <Alpetpon>"]
+readme = "README.md"
+
+packages = [
+    { include = "url_checker" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.10.5"
+regex = "^2024.9.11"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+coverage = "^7.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
